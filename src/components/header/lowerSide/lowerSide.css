@@ -1,0 +1,54 @@
+.app_header_lower_side{
+    width: 100%;
+    height: 40%;
+    background-color: #9CCB3B;
+}
+
+.lower_side_options_list{
+    list-style: none;
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.options_list_item{
+    transition: .3s;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.options_list_item:last-child{
+    cursor: default;
+}
+
+.options_list_last_child_first_span, .options_list_last_child_second_span{
+    width: 12px;
+    height: 3px;
+    background-color: white;
+    border-radius: .5px;
+    position: relative;
+    display: inline-block;
+    left: 20px;
+    transform: rotate(45deg);
+}
+
+.options_list_last_child_second_span{
+    transform: rotate(-45deg);
+    left: 15px;
+}
+
+.options_list_item.current{
+    background-color: white;
+    color: black;
+    padding: .25em 2em;
+    border-radius: 5px;
+}
